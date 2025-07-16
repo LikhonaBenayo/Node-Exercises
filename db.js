@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const conn = mysql.createConnection({
   host: 'localhost',
   user: 'root',          
-  password: 'Goodman8*', // Use your MySQL password    
+  password: '', // Use your MySQL password    
   database: 'shopleft_database'
 });
 
