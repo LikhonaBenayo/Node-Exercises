@@ -1,14 +1,11 @@
 const express = require('express');
 require('dotenv').config();
-
-const productRoutes = require('./routes/products');
-const userRoutes = require('./routes/users');
+const employeeRoutes = require('./routes/employeeRoutes');
 
 const app = express();
 app.use(express.json());
 
-app.use('/products', productRoutes);
-app.use('/users', userRoutes);
+app.use('/employees', employeeRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
